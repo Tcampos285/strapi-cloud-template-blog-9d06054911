@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "albuns",
+  "info": {
+    "singularName": "album",
+    "pluralName": "albuns",
+    "displayName": "Album"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "required": true
+    },
+    "Artista": {
+      "type": "string",
+      "required": true
+    },
+    "Ano": {
+      "type": "string"
+    },
+    "Cover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "Tracks": {
+      "type": "json",
+      "required": true
+    },
+    "Label": {
+      "type": "string",
+      "required": true
+    },
+    "Spotify": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

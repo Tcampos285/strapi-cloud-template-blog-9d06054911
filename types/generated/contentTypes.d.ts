@@ -66,7 +66,7 @@ export interface AdminApiToken extends Struct.CollectionTypeSchema {
 
 export interface AdminApiTokenPermission extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_api_token_permissions';
-  info: {
+  info: { 
     description: '';
     displayName: 'API Token Permission';
     name: 'API Token Permission';

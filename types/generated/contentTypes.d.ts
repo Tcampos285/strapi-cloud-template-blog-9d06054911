@@ -508,7 +508,7 @@ export interface ApiAlbumAlbum extends Struct.CollectionTypeSchema {
   };
   attributes: {
     Ano: Schema.Attribute.String;
-    Artista: Schema.Attribute.String & Schema.Attribute.Required;
+    Artista: Schema.Attribute.String;
     Cover: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
@@ -636,6 +636,8 @@ export interface ApiScoreScore extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Editora: Schema.Attribute.String;
+    imagem: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::score.score'> &
       Schema.Attribute.Private;
@@ -645,7 +647,6 @@ export interface ApiScoreScore extends Struct.CollectionTypeSchema {
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     Url: Schema.Attribute.String & Schema.Attribute.Required;
-    Works: Schema.Attribute.JSON & Schema.Attribute.Required;
   };
 }
 

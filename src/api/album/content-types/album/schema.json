@@ -17,7 +17,7 @@
     },
     "Artista": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "Ano": {
       "type": "string"

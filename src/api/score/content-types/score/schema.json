@@ -19,9 +19,18 @@
       "type": "string",
       "required": true
     },
-    "Works": {
-      "type": "json",
-      "required": true
+    "Editora": {
+      "type": "string"
+    },
+    "imagem": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

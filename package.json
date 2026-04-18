@@ -9,6 +9,8 @@
     "deploy": "strapi deploy",
     "dev": "strapi develop",
     "develop": "strapi develop",
+    "export": "node scripts/export.js",
+    "migrate": "node scripts/migrate.js",
     "start": "strapi start",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
